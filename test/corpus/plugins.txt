@@ -12,3 +12,24 @@ output {}
   (plugin_section (plugin_type))
   (plugin_section (plugin_type))
   (plugin_section (plugin_type)))
+
+=============
+Basic comment
+=============
+
+# input
+input {}
+# filter
+filter {}
+# output
+output {}
+
+---
+
+(config
+  (comment)
+  (plugin_section (plugin_type))
+  (comment)
+  (plugin_section (plugin_type))
+  (comment)
+  (plugin_section (plugin_type)))

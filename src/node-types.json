@@ -35,6 +35,10 @@
     "fields": {}
   },
   {
+    "type": "comment",
+    "named": true
+  },
+  {
     "type": "filter",
     "named": false
   },
