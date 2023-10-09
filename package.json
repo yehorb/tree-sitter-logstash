@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/yehorb/tree-sitter-logstash/issues"
   },
-  "homepage": "https://github.com/yehorb/tree-sitter-logstash#readme"
+  "homepage": "https://github.com/yehorb/tree-sitter-logstash#readme",
+  "dependencies": {
+    "nan": "^2.18.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.8"
+  }
 }
