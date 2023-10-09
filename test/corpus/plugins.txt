@@ -44,3 +44,21 @@ input { stdin {} }
 
 (config
   (plugin_section (plugin_type) (plugin (name))))
+
+===================
+Attributes - plugin
+===================
+
+input { stdin { foo => bar {} } }
+
+---
+
+(config
+  (plugin_section
+    (plugin_type)
+    (plugin
+      (name)
+      (attribute
+        (name)
+        (plugin
+          (name))))))

@@ -23,9 +23,16 @@ module.exports = grammar({
     plugin: $ => seq(
       $.name,
       '{',
+      repeat($.attribute),
       '}'
     ),
 
     name: $ => /[A-Za-z0-9_-]+/,
+
+    attribute: $ => seq(
+      $.name,
+      '=>',
+      $.plugin
+    )
   }
 });
