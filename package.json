@@ -1,0 +1,24 @@
+{
+  "name": "tree-sitter-logstash",
+  "version": "0.0.0",
+  "description": "logstash grammar for the tree-sitter parsing library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yehorb/tree-sitter-logstash.git"
+  },
+  "keywords": [
+    "incremental",
+    "parsing",
+    "logstash"
+  ],
+  "author": "Yehor Borkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yehorb/tree-sitter-logstash/issues"
+  },
+  "homepage": "https://github.com/yehorb/tree-sitter-logstash#readme"
+}
