@@ -14,9 +14,18 @@ module.exports = grammar({
     plugin_section: $ => seq(
       $.plugin_type,
       '{',
+      repeat($.plugin),
       '}'
     ),
 
-    plugin_type: $ => choice('input', 'filter', 'output')
+    plugin_type: $ => choice('input', 'filter', 'output'),
+
+    plugin: $ => seq(
+      $.name,
+      '{',
+      '}'
+    ),
+
+    name: $ => /[A-Za-z0-9_-]+/,
   }
 });

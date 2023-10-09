@@ -1,6 +1,6 @@
-============
-Basic plugin
-============
+====================
+Basic plugin section
+====================
 
 input {}
 filter {}
@@ -33,3 +33,14 @@ output {}
   (plugin_section (plugin_type))
   (comment)
   (plugin_section (plugin_type)))
+
+============
+Basic plugin
+============
+
+input { stdin {} }
+
+---
+
+(config
+  (plugin_section (plugin_type) (plugin (name))))

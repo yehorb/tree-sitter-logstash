@@ -36,6 +36,13 @@
           "value": "{"
         },
         {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "plugin"
+          }
+        },
+        {
           "type": "STRING",
           "value": "}"
         }
@@ -57,6 +64,27 @@
           "value": "output"
         }
       ]
+    },
+    "plugin": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "name"
+        },
+        {
+          "type": "STRING",
+          "value": "{"
+        },
+        {
+          "type": "STRING",
+          "value": "}"
+        }
+      ]
+    },
+    "name": {
+      "type": "PATTERN",
+      "value": "[A-Za-z0-9_-]+"
     }
   },
   "extras": [
