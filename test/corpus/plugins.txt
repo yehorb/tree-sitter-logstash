@@ -1,0 +1,14 @@
+============
+Basic plugin
+============
+
+input {}
+filter {}
+output {}
+
+---
+
+(config
+  (plugin_section (plugin_type))
+  (plugin_section (plugin_type))
+  (plugin_section (plugin_type)))
