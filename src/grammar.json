@@ -90,8 +90,17 @@
       ]
     },
     "name": {
-      "type": "PATTERN",
-      "value": "[A-Za-z0-9_-]+"
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "[A-Za-z0-9_-]+"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "_name_marker"
+        }
+      ]
     },
     "attribute": {
       "type": "SEQ",
@@ -140,7 +149,12 @@
   ],
   "conflicts": [],
   "precedences": [],
-  "externals": [],
+  "externals": [
+    {
+      "type": "SYMBOL",
+      "name": "_name_marker"
+    }
+  ],
   "inline": [],
   "supertypes": []
 }

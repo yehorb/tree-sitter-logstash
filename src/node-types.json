@@ -38,6 +38,11 @@
     }
   },
   {
+    "type": "name",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "plugin",
     "named": true,
     "fields": {},
@@ -99,10 +104,6 @@
   {
     "type": "input",
     "named": false
-  },
-  {
-    "type": "name",
-    "named": true
   },
   {
     "type": "output",

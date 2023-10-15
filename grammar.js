@@ -6,6 +6,10 @@ module.exports = grammar({
     $.comment
   ],
 
+  externals: $ => [
+    $._name_marker
+  ],
+
   rules: {
     config: $ => repeat1($.plugin_section),
 
@@ -27,7 +31,10 @@ module.exports = grammar({
       '}'
     ),
 
-    name: $ => /[A-Za-z0-9_-]+/,
+    // $.name token only makes sense in context where it is followed by brackets or arrow
+    // this rule is expressed in external scanner which produced zero-width lookahead
+    // based token.
+    name: $ => seq(/[A-Za-z0-9_-]+/, $._name_marker),
 
     attribute: $ => seq(
       $.name,
