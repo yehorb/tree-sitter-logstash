@@ -106,9 +106,26 @@
         },
         {
           "type": "SYMBOL",
-          "name": "plugin"
+          "name": "_value"
         }
       ]
+    },
+    "_value": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "plugin"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bareword"
+        }
+      ]
+    },
+    "bareword": {
+      "type": "PATTERN",
+      "value": "[A-Za-z_][A-Za-z0-9_]+"
     }
   },
   "extras": [

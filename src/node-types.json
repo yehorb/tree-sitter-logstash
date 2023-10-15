@@ -8,6 +8,10 @@
       "required": true,
       "types": [
         {
+          "type": "bareword",
+          "named": true
+        },
+        {
           "type": "name",
           "named": true
         },
@@ -79,6 +83,10 @@
   {
     "type": "=>",
     "named": false
+  },
+  {
+    "type": "bareword",
+    "named": true
   },
   {
     "type": "comment",

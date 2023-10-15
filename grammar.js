@@ -32,7 +32,14 @@ module.exports = grammar({
     attribute: $ => seq(
       $.name,
       '=>',
-      $.plugin
-    )
+      $._value
+    ),
+
+    _value: $ => choice(
+      $.plugin,
+      $.bareword,
+    ),
+
+    bareword: $ => /[A-Za-z_][A-Za-z0-9_]+/,
   }
 });

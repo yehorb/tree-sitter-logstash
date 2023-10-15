@@ -62,3 +62,20 @@ input { stdin { foo => bar {} } }
         (name)
         (plugin
           (name))))))
+
+=====================
+Attributes - bareword
+=====================
+
+input { stdin { foo => false } }
+
+---
+
+(config
+  (plugin_section
+    (plugin_type)
+    (plugin
+      (name)
+      (attribute
+        (name)
+        (bareword)))))
