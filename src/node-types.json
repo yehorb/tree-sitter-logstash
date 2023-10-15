@@ -8,6 +8,10 @@
       "required": true,
       "types": [
         {
+          "type": "bareword",
+          "named": true
+        },
+        {
           "type": "name",
           "named": true
         },
@@ -32,6 +36,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "name",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "plugin",
@@ -81,6 +90,10 @@
     "named": false
   },
   {
+    "type": "bareword",
+    "named": true
+  },
+  {
     "type": "comment",
     "named": true
   },
@@ -91,10 +104,6 @@
   {
     "type": "input",
     "named": false
-  },
-  {
-    "type": "name",
-    "named": true
   },
   {
     "type": "output",
