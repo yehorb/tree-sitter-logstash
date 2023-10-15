@@ -93,12 +93,12 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "PATTERN",
-          "value": "[A-Za-z0-9_-]+"
+          "type": "SYMBOL",
+          "name": "_name_start"
         },
         {
-          "type": "SYMBOL",
-          "name": "_name_marker"
+          "type": "PATTERN",
+          "value": "[A-Za-z0-9_-]+"
         }
       ]
     },
@@ -152,7 +152,7 @@
   "externals": [
     {
       "type": "SYMBOL",
-      "name": "_name_marker"
+      "name": "_name_start"
     }
   ],
   "inline": [],

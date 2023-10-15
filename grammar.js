@@ -7,7 +7,7 @@ module.exports = grammar({
   ],
 
   externals: $ => [
-    $._name_marker
+    $._name_start
   ],
 
   rules: {
@@ -34,7 +34,7 @@ module.exports = grammar({
     // $.name token only makes sense in context where it is followed by brackets or arrow
     // this rule is expressed in external scanner which produced zero-width lookahead
     // based token.
-    name: $ => seq(/[A-Za-z0-9_-]+/, $._name_marker),
+    name: $ => seq($._name_start, /[A-Za-z0-9_-]+/),
 
     attribute: $ => seq(
       $.name,
